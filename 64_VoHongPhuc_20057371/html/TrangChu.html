@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <script src="../JS/jquery-3.6.0.min.js"></script>
+    <script src="../JS/bootstrap.min.js"></script>
+    <script src="../JS/js.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <img src="../Images/logo.PNG" alt="" width="100%">
+            </div>
+            <div class="col-md-10 text-center">
+                <h3>ĐOÀN THANH NIÊN THÀNH PHỐ HỒ CHÍ MINH</h3>
+                <h5 class="text-danger">ĐOÀN THANH NIÊN TRƯỜNG ĐẠI HỌC 
+                    CÔNG NGHIỆP THÀNH PHỐ HỒ CHÍ MINH</h5>
+            </div>
+        </div>
+        <div class="row">
+            <nav class="navbar navbar-expand-md col-md-12 " style="background-color: aqua;">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="" class="nav-link">TRANG CHỦ</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">ĐOÀN THỂ</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">SỰ KIỆN</a></li>
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown">HOẠT ĐỘNG
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        
+                        <li class="nav-item"><a href="" class="nav-link" id="btn2" data-toggle="modal" data-target="#myModal">Đăng kí</a></li>
+                        <li><a href="#">Tham gia</a></li>
+                    </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="row"> 
+            <div class="col-md-6">
+                <aside>
+                    <img src="../Images/ngayhoithanhnien.JPG" class="rounded-circle" width="100%" alt="">
+                </aside>
+            </div>
+            <div class="col-md-6">
+                <h3>TIN NỔI BẬT</h3>
+                <ul>
+                    <li><a href="">I.Mùa hè xanh</a></li>
+                    <li><a href="">II.Thanh niên tình nguyện</a></li>
+                    <li><a href="">III.Tấm lòng vàng</a></li>
+                    <li><a href="">IV.Hiến máu nhân đạo</a></li>
+                    <li><a href="">V. Bảo vệ môi trường sạch</a></li>
+                    <li><a href="">VI.Thi đua lập thành tích chào mừng 26/3</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <section>
+                    <table class="table table-striped" id="DS">
+                                <tr>
+                                    <td>STT</td>
+                                    <td>Mã SV</td>
+                                    <td>Tên SV</td>
+                                    <td>Ngày tham gia</td>
+                                    <td>Email</td>
+                                    <td>Số điện thoại</td>
+                                </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1234567890</td>
+                                <td>Vo Hong Phuc</td>
+                                <td>2022-04-27</td>
+                                <td>phuc@gmail.com</td>
+                                <td>0909-090-090</td>
+                            </tr>
+
+                    </table>
+                </section>
+            </div>
+        </div>
+        <div class="row">
+            <footer class="col-md-12 bg-info text-right">
+                <p>@ 2020-2021 Đoàn thanh niên- Trường đại học Công Nghiệp TP. Hồ Chí Minh</p>
+            </footer>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header  justify-content-center">
+                    THÔNG TIN ĐĂNG KÍ
+                    <button class="close" data-dismiss="modal" type="button">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form action="" class="form-horizontal">
+                        <div class="form-group" class="ma">
+                            <label for="lblMaSV">Mã sinh viên: </label>
+                            <input type="text" name="txtMaSV" id="MaSV" class="form-control">
+                            <span id="tbMa" class="text-danger" style="text-align: center;">*</span>
+                        </div>
+
+                        <div class="form-group" id="ten">
+                            <label for="lblHT">Họ tên: </label>
+                            <input type="text" name="txtHT" id="HT" class="form-control">
+                            <span id="tbHT" class="text-danger" style="text-align: center;">*</span>
+                        </div>  
+                        <div class="form-group" id="ngayTG">
+                            <label for="lblNgayTG">Ngày tham gia: </label>
+                            <input type="date" name="txtNgayTG" id="NgayTG" class="form-control">
+                            <span id="tbNgayTG" class="text-danger" style="text-align: center;">*</span>
+                        </div>
+                        <div class="form-group" id="email">
+                            <label for="lblEmail">Email: </label>
+                            <input type="text" name="txtEmail" id="Email" class="form-control">
+                            <span id="tbEmail" class="text-danger" style="text-align: center;">*</span>
+                        </div>
+                        <div class="form-group" id="sdt">
+                            <label for="lblSDT">Số điện thoại: </label>
+                            <input type="text" name="txtSDT" id="SDT" class="form-control">
+                            <span id="tbSDT" class="text-danger" style="text-align: center;">*</span>
+                        </div>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="submit" id="btnSubDK" class="btn btn-danger col-md-12">Lưu</button>
+                    <!-- <input type="button" value="Lưu" onclick="DangKy()"> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
